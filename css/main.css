@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+:root {
+    --white: #ffffff;
+    --grey: #cdcdcd;
+    --darkgrey: #787878;
+    --black: #191010;
+    --orangered: #FF4500;
+    --green: #009900;
+}
+
+.nav-branding {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Bree Serif', cursive;
+}
+
+.spaceYx {
+    padding: 2em 0;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+    top: 2vh;
+    right: 0;
+    padding: 20px;
+    z-index: 2;
+    border-radius: 4px;
+    /* width: 100%; */
+    border: 1px solid var(--grey);
+    background-color: rgb(242, 252, 237);
+}
+.contents {
+    text-align: center;
+}
+.contents h2 {
+    font-size: 1.25em;
+    color: var(--black);
+    font-family: 'Bree Serif', Helvetica, sans-serif;
+    padding: 1em 0 0.5em;
+    letter-spacing: 3px;
+}
+.contents p {
+    font-size: 0.875em;
+    color: var(--black);
+    padding: 0 0 2em;
+}
+
+.formtitle h5 {
+    color: var(--orangered);
+}
+.formtitle p {
+    font-size: 0.875em;
+    color: var(--darkgrey);
+    padding: 0.5em 0 1.5em;
+}
+sup {
+    color: #FF4500;
+}
+.formwrp label {
+    color: var(--black);
+}
+.formwrp input {
+    width: 100%;
+    height: 3em;
+    outline: 0;
+    margin-bottom: 0.5em;
+    background-color: transparent;
+    border: 1px solid var(--grey);
+}
+.formwrp input[type="text"] {
+    padding-left: 1em;
+    color: var(--black);
+}
+::placeholder {
+    color: var(--darkgrey);
+    opacity: 1;
+}
+.formbtn {
+    margin: 1em 0 0;
+    font-weight: bold;
+    padding: 12px 16px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--green);
+    border: 1px solid var(--green);
+}
+.formbtn:hover {
+    color: var(--black);
+    background-color: transparent;
+}
+
+.formwrp p {
+    padding: 1em 0 0;
+    font-size: 0.875em;
+    color: var(--darkgrey);
+}
+
+
+.bnrimage {
+    background-image: url(../img/bottle-1.svg);
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    height: 40vh;
+    opacity: 1;
+}
+.bnrgap {
+    margin: 0 0 22em;
+}
+.absolute1 {
+    position: absolute;
+    top: 14vh;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+}
+.minheight {
+    min-height: 35em;
+}
+.wallBg {
+    background-image: url(../img/plantation.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    opacity: 1;
+}
+.bnrimage1 {
+    background-image: url(../img/vegetables.svg);
+    background-repeat: no-repeat;
+    height: 40vh;
+    opacity: 1;
+}
+
+
+
+
+
+@media only screen and (min-width: 48em) {  /* 768px */
+
+    .wallBg {
+        height: 65vh;
+    }
+    .contents h2 {
+        font-size: 1.5em;
+    }
+    .minheight {
+        min-height: 24em;
+    }
+    .absolute {
+        top: 0;
+        right: 0;
+    }
+    .absolute1 {
+        top: 25vh;
+        left: -3vh;
+    }
+    .bnrimage {
+        height: 36vh;
+    }
+}
+  
+  
+@media only screen and (min-width: 60em) { /* 960px */
+
+    .wallBg {
+        height: 100vh;
+    }
+    .contents h2 {
+        font-size: 1.625em;
+    }
+    .contents p {
+        font-size: 100%;
+    }
+    .absolute {
+        top: 1vh;
+        right: 0;
+        width: 90%;
+    }
+    .minheight {
+        min-height: 62vh;
+    }
+    .absolute1 {
+        top: 32vh;
+        left: -4vh;
+    }
+    .bnrimage {
+        height: 52vh;
+    }
+}
+  
